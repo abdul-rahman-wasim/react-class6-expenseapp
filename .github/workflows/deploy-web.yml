@@ -33,8 +33,10 @@ jobs:
         with:
          cmd:  install
       
-      - name: Buils
-        run: npm run-script build
+      - name: Yarn Build
+        run: yarn build
+        env:
+         CI: false
          
         
       - name: Installing Surge
